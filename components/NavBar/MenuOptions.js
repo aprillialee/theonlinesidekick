@@ -25,10 +25,10 @@ const MenuOptionsStyled = styled.ul`
     display: flex;
     flex-flow: column nowrap;
     height: 100vh;
+    width: 100vw;
     background: #1b2945;
     color: white;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    transition: all 1 ease-in-out;
   }
 `;
 
