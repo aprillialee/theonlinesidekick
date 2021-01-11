@@ -13,7 +13,7 @@ function Burger() {
         <div />
         <div />
       </BurgerStyled>
-      <MenuOptions />
+      <MenuOptions open={open} />
     </>
   );
 }
@@ -30,11 +30,12 @@ const BurgerStyled = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    z-index: 20;
   }
   div {
     width: 2rem;
     height: 0.15rem;
-    background: ${({ open }) => (open ? "red" : "blue")};
+    background: ${({ open }) => (open ? "white" : "#1B2945")};
     border-radius: 2px;
     transform-origin: 1px;
     transition: all 0.3s linear;
