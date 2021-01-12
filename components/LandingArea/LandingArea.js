@@ -19,6 +19,10 @@ const LandingAreaStyled = styled.div`
   align-items: center;
   flex-flow: column nowrap;
   padding-top: 50px;
+
+  @media (max-width: 768px) {
+    height: 60vh;
+  }
 `;
 
 const Title = styled.h1`
@@ -26,7 +30,12 @@ const Title = styled.h1`
   font-size: 3rem;
   color: #2b2a2a;
   margin: 0;
+  margin-top: 30px;
   padding: 0;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 
 const Subtitle = styled.h2`
@@ -35,7 +44,7 @@ const Subtitle = styled.h2`
   color: #2b2a2a;
   font-weight: 400;
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 `;
 
 export default LandingArea;

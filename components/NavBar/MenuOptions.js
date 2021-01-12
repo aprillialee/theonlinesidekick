@@ -24,6 +24,7 @@ const MenuOptionsStyled = styled.ul`
   @media (max-width: 768px) {
     display: flex;
     flex-flow: column nowrap;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     background: #1b2945;
