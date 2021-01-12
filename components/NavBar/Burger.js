@@ -30,7 +30,7 @@ const BurgerStyled = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
-    z-index: 20;
+    z-index: 30;
   }
   div {
     width: 2rem;

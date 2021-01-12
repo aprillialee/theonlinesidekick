@@ -30,6 +30,7 @@ const MenuOptionsStyled = styled.ul`
     background: #1b2945;
     color: white;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    z-index: 20;
   }
 `;
 
