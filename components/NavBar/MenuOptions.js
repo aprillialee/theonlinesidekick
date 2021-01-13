@@ -1,13 +1,25 @@
 import styled from "styled-components";
 
+import Link from "next/Link";
+
 function MenuOptions({ open }) {
   return (
     <MenuOptionsStyled open={open}>
-      <MenuOption>Our Services</MenuOption>
-      <MenuOption>About Us</MenuOption>
-      <Logo src="/SideKickLogo.svg" />
-      <MenuOption>Pricing</MenuOption>
-      <MenuOption>Contact Us</MenuOption>
+      <Link href="/ourservices">
+        <MenuOption>Our Services</MenuOption>
+      </Link>
+      <Link href="/aboutus">
+        <MenuOption>About Us</MenuOption>
+      </Link>
+      <Link href="/">
+        <Logo src="/SideKickLogo.svg" />
+      </Link>
+      <Link href="/pricing">
+        <MenuOption>Pricing</MenuOption>
+      </Link>
+      <Link href="/contactus">
+        <MenuOption>Contact Us</MenuOption>
+      </Link>
     </MenuOptionsStyled>
   );
 }
@@ -38,6 +50,12 @@ const MenuOption = styled.li`
   padding: 0;
   font-size: 1rem;
   font-weight: 400;
+  cursor: pointer;
+
+  :hover {
+    border-bottom: 1px solid purple;
+    color: purple;
+  }
 
   @media (max-width: 768px) {
     font-size: 1.5rem;
