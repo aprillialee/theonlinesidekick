@@ -1,27 +1,37 @@
 import styled from "styled-components";
 
+import Link from "next/link";
+
 function ImageNav() {
   return (
     <ImageNavStyled>
       <Box>
         <img src="/images/blue.jpg" />
         <TextBox>WEBSITE SERVICES</TextBox>
-        <LearnMoreButton>Learn More &#8594;</LearnMoreButton>
+        <Link href="/ourservices">
+          <LearnMoreButton>Learn More &#8594;</LearnMoreButton>
+        </Link>
       </Box>
       <Box>
         <img src="/images/stapler.jpg" />
         <TextBox>ADMINISTRATION</TextBox>
-        <LearnMoreButton>Learn More &#8594;</LearnMoreButton>
+        <Link href="/ourservices">
+          <LearnMoreButton>Learn More &#8594;</LearnMoreButton>
+        </Link>
       </Box>
       <Box>
         <img src="/images/telephone.jpg" />
         <TextBox>ONLINE MARKETING</TextBox>
-        <LearnMoreButton>Learn More &#8594;</LearnMoreButton>
+        <Link href="/ourservices">
+          <LearnMoreButton>Learn More &#8594;</LearnMoreButton>
+        </Link>
       </Box>
       <Box>
-        <img src="/images/green.jpg" />
+        <img src="/images/phone.jpeg" />
         <TextBox>PERSONAL ASSISTANCE</TextBox>
-        <LearnMoreButton>Learn More &#8594;</LearnMoreButton>
+        <Link href="/ourservices">
+          <LearnMoreButton>Learn More &#8594;</LearnMoreButton>
+        </Link>
       </Box>
     </ImageNavStyled>
   );
@@ -89,7 +99,11 @@ const LearnMoreButton = styled.button`
   font-size: 1rem;
   color: white;
   text-shadow: 0px 4px 4px rgba(90, 125, 249, 0.53);
-
+  cursor: pointer;
+  :hover {
+    color: purple;
+    border-bottom: 1px solid purple;
+  }
   @media (max-width: 768px) {
     margin-left: 55%;
   }

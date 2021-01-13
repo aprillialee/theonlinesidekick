@@ -3,12 +3,14 @@ import "../styles/globals.css";
 import styled from "styled-components";
 
 import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Logo src="/SideKickLogo.svg" />
       <NavBar /> <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
