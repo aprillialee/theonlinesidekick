@@ -6,7 +6,9 @@ function Footer() {
       <FooterTextStyled>
         <Email>hello@theonlinesidekick.com</Email>
         <Instagram src="/instagram.png" />
-        <Copyright>&#169; The Online Sidekick - All Rights Reserved</Copyright>
+        <Copyright>
+          &#169; 2021 The Online Sidekick - All Rights Reserved
+        </Copyright>
       </FooterTextStyled>
     </FooterStyled>
   );

@@ -1,5 +1,7 @@
 import "../styles/globals.css";
 
+import Link from "next/link";
+
 import styled from "styled-components";
 
 import NavBar from "../components/NavBar/NavBar";
@@ -8,7 +10,9 @@ import Footer from "../components/Footer/Footer";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Logo src="/SideKickLogo.svg" />
+      <Link href="/">
+        <Logo src="/SideKickLogo.svg" />
+      </Link>
       <NavBar /> <Component {...pageProps} />
       <Footer />
     </>

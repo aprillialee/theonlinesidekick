@@ -1,4 +1,13 @@
+import styled from "styled-components";
+
+import OurServicesList from "../components/OurServices/OurServicesList";
+
 function OurServices() {
-  return <h1>Hello</h1>;
+  return (
+    <>
+      <OurServicesList />
+    </>
+  );
 }
+
 export default OurServices;
