@@ -1,4 +1,6 @@
+import PricingComponent from "../components/Pricing/PricingComponent";
+
 function Pricing() {
-  return <h1>Pricing</h1>;
+  return <PricingComponent />;
 }
 export default Pricing;
