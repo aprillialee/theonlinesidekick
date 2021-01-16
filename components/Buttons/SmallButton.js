@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
+import Link from "next/link";
+
 function SmallButton(props) {
-  return <SmallButtonStyled>{props.label}</SmallButtonStyled>;
+  return (
+    <Link href="/contactus">
+      <SmallButtonStyled>{props.label}</SmallButtonStyled>
+    </Link>
+  );
 }
 
 const SmallButtonStyled = styled.button`
