@@ -1,4 +1,6 @@
+import ContactUsPage from "../components/ContactUs/ContactUsPage";
+
 function ContactUs() {
-  return <h1>Contact</h1>;
+  return <ContactUsPage>Contact</ContactUsPage>;
 }
 export default ContactUs;
