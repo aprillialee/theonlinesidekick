@@ -67,6 +67,7 @@ const Logo = styled.img`
   width: 90px;
   height: 90px;
   padding-top: 10px;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     display: none;

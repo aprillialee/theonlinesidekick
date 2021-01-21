@@ -19,6 +19,7 @@ const SmallButtonStyled = styled.button`
   background: #ffffff;
   outline: none;
   font-size: 10px;
+  cursor: pointer;
 `;
 
 export default SmallButton;
