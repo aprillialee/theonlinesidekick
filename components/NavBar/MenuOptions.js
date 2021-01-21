@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Link from "next/Link";
+import Link from "next/link";
 
 function MenuOptions({ open }) {
   return (
