@@ -11,7 +11,7 @@ import SmallButton from "../Buttons/SmallButton";
 function OurServicesList() {
   return (
     <OurServicesListStyled>
-      <OurServicesTitle>Our Services</OurServicesTitle>
+      <Title>Our Services</Title>
       <ServicesContainer>
         <Administration />
         <Technologies />
@@ -26,7 +26,7 @@ function OurServicesList() {
 
 const OurServicesListStyled = styled.div`
   width: 100%;
-  height: 600px;
+  height: 100%;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -36,15 +36,11 @@ const OurServicesListStyled = styled.div`
       rgba(255, 255, 255, 0) 100%
     ),
     #1b2945;
-
-  @media (max-width: 768px) {
-    height: 1300px;
-  }
 `;
 
-const OurServicesTitle = styled.h1`
+export const Title = styled.h1`
   font-weight: 800;
-  color: white;
+  color: ${(props) => (props.primary ? "#1b2945;" : "white")};
   letter-spacing: 1px;
   margin-top: 40px;
 `;
