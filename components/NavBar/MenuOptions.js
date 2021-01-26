@@ -41,6 +41,8 @@ const MenuOptionsStyled = styled.ul`
     width: 100vw;
     background: #1b2945;
     color: white;
+    right: 0;
+    top: 0;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     z-index: 20;
   }
