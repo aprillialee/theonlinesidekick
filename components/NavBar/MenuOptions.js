@@ -45,6 +45,7 @@ const MenuOptionsStyled = styled.ul`
     top: 0;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     z-index: 20;
+    transition: transform 0.5s ease-in-out;
   }
 `;
 
