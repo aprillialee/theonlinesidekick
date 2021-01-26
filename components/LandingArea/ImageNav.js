@@ -105,7 +105,7 @@ const LearnMoreButton = styled.button`
     border-bottom: 1px solid purple;
   }
   @media (max-width: 768px) {
-    margin-left: 55%;
+    margin-left: 40%;
   }
 `;
 
